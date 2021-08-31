@@ -116,10 +116,8 @@ USE_L10N = True
 USE_TZ = True
 
 
-PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
-print(PROJECT_DIR)
-STATIC_ROOT = PROJECT_DIR
-STATIC_URL = '/static/'
+STATIC_URL = '/static/' # the path in url
+
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
