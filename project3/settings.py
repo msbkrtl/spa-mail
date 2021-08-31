@@ -120,8 +120,7 @@ STATIC_ROOT = os.path.join(PROJECT_DIR, 'static')
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 STATICFILES_DIRS = [
-    BASE_DIR / "static",
-    '/var/www/static/',
+    os.path.join(PROJECT_DIR, 'static'),
     os.path.join(PROJECT_DIR, 'templates'),
     os.path.join(PROJECT_DIR, 'templates/mail'),
     os.path.join(PROJECT_DIR, 'static/mail')
